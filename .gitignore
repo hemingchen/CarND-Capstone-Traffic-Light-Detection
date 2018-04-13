@@ -1,0 +1,16 @@
+__pycache__/
+
+.ipynb_checkpoints
+
+model/saved_model/
+model/checkpoint
+model/frozen_inference_graph.pb
+model/*model*
+
+data/sim_training_data/
+data/real_training_data/
+data/*.record
+
+.DS_Store
+
+.idea

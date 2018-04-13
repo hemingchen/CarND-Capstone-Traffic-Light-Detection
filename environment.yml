@@ -1,0 +1,12 @@
+name: carnd-term3-tl-detection
+channels:
+    - https://conda.anaconda.org/menpo
+    - conda-forge
+dependencies:
+    - python==3.6
+    - pip:
+        - tensorflow
+        - pillow
+        - lxml
+        - jupyter
+        - matplotlib
