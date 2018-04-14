@@ -49,16 +49,7 @@ mkdir C:\tensorflow
 git clone https://github.com/tensorflow/models.git
 ```
 
-#### 3.2 Compile protobuf and generate Python code
-```
-# From C:\tensorflow\models
-for %f in (research\object_detection\protos\*.proto) do protoc.exe %f --python_out=.
-```
-
-Proceed if Python files are successfully generated in `C:\tensorflow\models\research\object_detection\protos`
-
-#### 3.3 Test installation
-
+#### 3.2 Update environment variable
 Create `PYTHONPATH` environment variable and add the following paths:
 ```
 C:\tensorflow\models
@@ -68,6 +59,16 @@ C:\tensorflow\models\research\object_detection
 ```
 
 Then add `%PYTHONPATH%` to system `PATH` variable.
+
+#### 3.3 Compile protobuf and generate Python code
+```
+# From C:\tensorflow\models\research
+for %f in (object_detection\protos\*.proto) do protoc.exe %f --python_out=.
+```
+
+Proceed if Python files are successfully generated in `C:\tensorflow\models\research\object_detection\protos`
+
+#### 3.4 Test installation
 
 Now test the above installation by running the following command. It should not report any error.
 ```
