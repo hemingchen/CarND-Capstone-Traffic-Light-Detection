@@ -81,10 +81,7 @@ Run
 jupyter notebook
 ```
 
-Open and execute all cells in the notebook:
-```
-object_detection_tutorial.ipynb
-```
+Open and execute all cells in notebook `object_detection_tutorial.ipynb`.
 
 It should not report any error. In the last cell, you should be able to see object detection results with test images.
 
