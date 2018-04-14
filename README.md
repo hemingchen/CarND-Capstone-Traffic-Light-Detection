@@ -94,7 +94,7 @@ It should not report any error. In the last cell, you should be able to see obje
 
 From this section onwards, this repository will be needed.
 ```
-git clone ...
+git clone https://github.com/hemingchen/CarND-Capstone-Traffic-Light-Detection.git
 ```
 
 
