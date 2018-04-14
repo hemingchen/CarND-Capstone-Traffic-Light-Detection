@@ -77,12 +77,13 @@ python C:\tensorflow\models\research\object_detection\builders\model_builder_tes
 
 Run
 ```
+# From C:\tensorflow\models\research\object_detection
 jupyter notebook
 ```
 
 Open and execute all cells in the notebook:
 ```
-C:\tensorflow\models\research\object_detection\object_detection_tutorial.ipynb
+object_detection_tutorial.ipynb
 ```
 
 It should not report any error. In the last cell, you should be able to see object detection results with test images.
