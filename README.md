@@ -2,18 +2,18 @@
 
 This repository was part of the [Final Project](https://github.com/hemingchen/CarND-Capstone) I submitted to [Udacity Self-Driving Car Engineer Nano Degree Program](https://eu.udacity.com/course/self-driving-car-engineer-nanodegree--nd013).
 
-With a pretrained model and Tensorflow Object Detection API, it trains a model to identify traffic light state with the images captured by in-vehicle camera.
+Based on a pretrained model, it uses the Tensorflow Object Detection API to train a new model to identify traffic light state from the images captured by in-vehicle camera.
 
 
 ## I. Setup Tensorflow and Object Detection API
 
-For Linux, please fefer to official installation guide:
+For Linux, please refer to the official installation guide:
  
 <https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md>
 
 For Windows, I used the following procedures to install Tensorflow Object Detection API on Windows 10. 
 
-Procedures mentioned in this section do not involve any file in this repository.
+Procedures mentioned in this section do not involve any file in this repository yet.
 
 ### 1. Install Windows dependencies
 
@@ -40,7 +40,7 @@ pip install tensorflow pillow lxml jupyter matplotlib
 
 #### 3.1 Install the source code
 ```
-# Create folder:
+# Create folder
 mkdir C:\tensorflow
 ```
 
@@ -83,7 +83,7 @@ jupyter notebook
 
 Open and execute all cells in notebook `object_detection_tutorial.ipynb`.
 
-It should not report any error. In the last cell, you should be able to see object detection results with test images.
+It should not report any error. In the last cell, you should be able to see object detection results on test images.
 
 
 
