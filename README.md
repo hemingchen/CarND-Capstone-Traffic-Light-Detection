@@ -137,7 +137,6 @@ REPO_ROOT\model\model.ckpt.meta
 ...
 ```
 
-
 ### 2. Train data
 
 #### 2.1 For simulator data
@@ -154,7 +153,6 @@ Save for inference:
 python C:\tensorflow\models\research\object_detection\export_inference_graph.py --pipeline_config_path=config\ssd_mobilenet_v1_coco_sim.config --trained_checkpoint_prefix=data\sim_training_data\sim_data_capture\model.ckpt-6000 --output_directory=model_frozen_sim\
 ```
 
-
 #### 2.2 For real data recorded on Carla
 
 Training:
@@ -169,7 +167,9 @@ Save for inference:
 python C:\tensorflow\models\research\object_detection\export_inference_graph.py --pipeline_config_path=config\ssd_mobilenet_v1_coco_real.config --trained_checkpoint_prefix=data\real_training_data\real_data_capture\model.ckpt-25000 --output_directory=model_frozen_real\
 ```
 
+### 3. Test trained model
 
+Run all cells in notebook `REPO_ROOT\traffic_light_detection_model_eval.ipynb`. Traffic light detection results can be seen in the test images and no error should be reported.
 
 
 ## References
