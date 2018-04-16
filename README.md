@@ -102,7 +102,7 @@ git clone https://github.com/hemingchen/CarND-Capstone-Traffic-Light-Detection.g
 
 ### 1. Download training data
 
-Labeled training/test data are kindly shared by other Udacity students, e.g. [Vatsal Srivastava](https://becominghuman.ai/traffic-light-detection-tensorflow-api-c75fdbadac62) shared his data [here](https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI), direct download link is [here](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/view?usp=sharing).
+Labeled training/test data are kindly shared by other Udacity students, e.g. [Vatsal Srivastava](https://becominghuman.ai/traffic-light-detection-tensorflow-api-c75fdbadac62) shared the link to label data [here](https://github.com/coldKnight/TrafficLight_Detection-TensorFlowAPI), direct download link is [here](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/view?usp=sharing).
 
 Download and extract the content to `REPO_ROOT\data` to get:
 ```
