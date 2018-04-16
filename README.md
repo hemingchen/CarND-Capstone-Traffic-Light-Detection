@@ -116,19 +116,9 @@ where the raw labeled data can be found in `real_training_data` and `sim_trainin
 
 ### 2. Generate TFRecord files for Tensorflow
 
-For training, we can directly use the `.record` files already included in the downloaded package. Use the following command in case they need to be generated again.
+For training, we can directly use the `.record` files already included in the downloaded package. 
 
-#### 2.1 For simulator data
-```
-# From repo root
-python C:\tensorflow\models\research\object_detection\dataset_tools\create_pascal_tf_record.py --data_dir=data\sim_training_data\sim_data_capture --output_path=data\sim_data.record
-```
-
-#### 2.2 For real data recorded on Carla
-```
-# From repo root
-python C:\tensorflow\models\research\object_detection\dataset_tools\create_pascal_tf_record.py --data_dir=data\real_training_data\real_data_capture --output_path=data\real_data.record
-```
+Please refer to [Anthony Sarkis's work](https://codeburst.io/self-driving-cars-implementing-real-time-traffic-light-detection-and-classification-in-2017-7d9ae8df1c58) in case you want to generate them again.
 
 
 
