@@ -33,7 +33,7 @@ Then add `C:\Program Files (x86)\protoc\bin\` to `PATH`
 
 As of April 2018, tensorflow==1.3 is required by Udacity self-driving car Carla, which must be enforced. Otherwise, the trained model will not run in the `tl_detector` node in ROS.
 ```
-# To enable GPU, use tensoflow-gpu intead
+# To enable GPU, use tensoflow-gpu==1.3 intead and Cuda v8.0 + cuDNN v6.0.
 pip install tensorflow==1.3 pillow lxml jupyter matplotlib
 ```
 
