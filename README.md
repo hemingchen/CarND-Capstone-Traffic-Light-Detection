@@ -25,15 +25,16 @@ C:\Program Files (x86)\protoc
 `protoc.exe` should be saved to:
 ```
 C:\Program Files (x86)\protoc\bin\protoc.exe
-
 ```
 
 Then add `C:\Program Files (x86)\protoc\bin\` to `PATH`
 
 ### 2. Install Python dependencies
+
+As of April 2018, tensorflow==1.3 is required by Udacity self-driving car Carla, which must be enforced. Otherwise, the trained model will not run in the `tl_detector` node in ROS.
 ```
 # To enable GPU, use tensoflow-gpu intead
-pip install tensorflow pillow lxml jupyter matplotlib
+pip install tensorflow==1.3 pillow lxml jupyter matplotlib
 ```
 
 ### 3. Install Tensorflow Object Detection API source code
@@ -49,10 +50,12 @@ mkdir C:\tensorflow
 git clone https://github.com/tensorflow/models.git
 ```
 
-If by any chance tensorflow reports [this error](https://stackoverflow.com/questions/49890823/typeerror-pred-must-be-a-tensor-or-a-python-bool-or-1-or-0-found-instead), either use the solution on stackoverflow or simply checkout an earlier version of the library, which worked for me:
+As tensorflow==1.3 is required by Udacity, the Object Detection API also needs to be downgraded in order to be compatible. Follow [this link](https://discussions.udacity.com/t/tl-detector-error-with-tensorflow-1-3/496721) for more details. 
+
+Checking out an earlier version from git worked for me:
 ```
 # From C:\tensorflow\models
-git checkout ad7755c
+git checkout edcd29f
 ```
 
 #### 3.2 Update environment variable
