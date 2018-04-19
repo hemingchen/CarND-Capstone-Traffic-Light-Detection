@@ -49,7 +49,7 @@ mkdir C:\tensorflow
 git clone https://github.com/tensorflow/models.git
 ```
 
-If any tensorflow reports [this error](https://stackoverflow.com/questions/49890823/typeerror-pred-must-be-a-tensor-or-a-python-bool-or-1-or-0-found-instead), either use the solution on stackoverflow or simply checkout an earlier version of the library, which worked for me:
+If by any chance tensorflow reports [this error](https://stackoverflow.com/questions/49890823/typeerror-pred-must-be-a-tensor-or-a-python-bool-or-1-or-0-found-instead), either use the solution on stackoverflow or simply checkout an earlier version of the library, which worked for me:
 ```
 # From C:\tensorflow\models
 git checkout ad7755c
