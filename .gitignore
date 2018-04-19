@@ -2,10 +2,17 @@ __pycache__/
 
 .ipynb_checkpoints
 
-model/saved_model/
-model/checkpoint
-model/frozen_inference_graph.pb
-model/*model*
+model_frozen_real/saved_model/
+model_frozen_real/checkpoint
+model_frozen_real/frozen_inference_graph.pb
+model_frozen_real/*model*
+model_frozen_real/pipeline.config
+
+model_frozen_sim/saved_model/
+model_frozen_sim/checkpoint
+model_frozen_sim/frozen_inference_graph.pb
+model_frozen_sim/*model*
+model_frozen_sim/pipeline.config
 
 data/sim_training_data/
 data/real_training_data/
