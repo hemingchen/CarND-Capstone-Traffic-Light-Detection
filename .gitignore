@@ -14,6 +14,8 @@ model_frozen_sim/frozen_inference_graph.pb
 model_frozen_sim/*model*
 model_frozen_sim/pipeline.config
 
+model/*
+
 data/sim_training_data/
 data/real_training_data/
 data/*.record
