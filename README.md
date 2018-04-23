@@ -159,10 +159,10 @@ python C:\tensorflow\models\research\object_detection\train.py --pipeline_config
 Save for inference:
 ```
 # From repo root
-python C:\tensorflow\models\research\object_detection\export_inference_graph.py --pipeline_config_path=config\ssd_mobilenet_v1_coco_sim.config --trained_checkpoint_prefix=data\sim_training_data\sim_data_capture\model.ckpt-20000 --output_directory=model_frozen_sim\
+python C:\tensorflow\models\research\object_detection\export_inference_graph.py --pipeline_config_path=config\ssd_mobilenet_v1_coco_sim.config --trained_checkpoint_prefix=data\sim_training_data\sim_data_capture\model.ckpt-35000 --output_directory=model_frozen_sim\
 ```
 
-As in the config files, 20000 steps worked very well for me, which took about 4-5 hours on my GPU.
+A total of 35000 steps in training worked very well for me, which took about 4-5 hours on my GPU.
 
 #### 2.2 For real data recorded on Carla
 
@@ -175,10 +175,10 @@ python C:\tensorflow\models\research\object_detection\train.py --pipeline_config
 Save for inference:
 ```
 # From repo root
-python C:\tensorflow\models\research\object_detection\export_inference_graph.py --pipeline_config_path=config\ssd_mobilenet_v1_coco_real.config --trained_checkpoint_prefix=data\real_training_data\model.ckpt-25000 --output_directory=model_frozen_real\
+python C:\tensorflow\models\research\object_detection\export_inference_graph.py --pipeline_config_path=config\ssd_mobilenet_v1_coco_real.config --trained_checkpoint_prefix=data\real_training_data\model.ckpt-35000 --output_directory=model_frozen_real\
 ```
 
-As in the config files, 25000 steps worked very well for me, which took about 5-6 hours on my GPU.
+A total of 35000 steps in training worked very well for me, which took about 6-7 hours on my GPU.
 
 ### 3. Test trained model
 
